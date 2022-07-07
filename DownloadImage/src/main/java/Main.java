@@ -10,7 +10,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         try {
-            Document doc = Jsoup.connect("target").get();
+            Document doc = Jsoup.connect("target").get(); //write target url instead of "target"
             Elements elements = doc.select("a").select("img");
             Elements elements2 = doc.select("img");
             elements.addAll(elements2);
